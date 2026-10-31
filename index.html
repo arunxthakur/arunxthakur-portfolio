@@ -1,174 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f4f3ee">
-  <meta name="description" content="Arun Thakur — Graphic Designer & Video Editor based in Himachal Pradesh, India. Branding, digital design and visual storytelling.">
-  <title>Arun Thakur — Graphic Designer & Video Editor</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--paper:#f4f3ee;--ink:#171816;--muted:#777970;--line:#d9d9d1;--accent:#c8f169;--serif:Georgia,serif;--mono:"DM Mono",monospace;--sans:"Manrope",Arial,sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1240px,calc(100% - 64px));margin:auto}
-    header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-    .brand{font-weight:800;letter-spacing:-.08em;font-size:21px}.brand span{color:#8a8d82}
-    nav{display:flex;gap:34px;font-size:12px;font-weight:600;color:#55584f}nav a:hover,.text-link:hover{opacity:.55}
-    .nav-cta{border:1px solid var(--ink);padding:11px 16px;border-radius:2px}
-    .eyebrow{font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-    .hero{min-height:650px;padding:100px 0 76px;display:flex;flex-direction:column;justify-content:space-between}
-    .hero-top{display:flex;justify-content:space-between;align-items:center}
-    .availability{display:flex;align-items:center;gap:9px;font:10px var(--mono);text-transform:uppercase;color:#666}
-    .dot{width:7px;height:7px;background:#83a94d;border-radius:50%;display:inline-block}
-    h1{font-size:clamp(76px,13vw,178px);line-height:.82;letter-spacing:-.105em;margin:65px 0 42px;font-weight:800}
-    h1 .second{display:block;color:#9b9d94}
-    .hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:35px}
-    .intro{font-size:17px;line-height:1.7;max-width:440px;color:#565950}
-    .button{display:inline-flex;align-items:center;gap:22px;background:var(--ink);color:white;padding:16px 20px;font-size:12px;font-weight:700;transition:.2s}
-    .button:hover{background:#45483f;transform:translateY(-2px)}
-    .scroll-note{font:10px var(--mono);color:var(--muted);text-transform:uppercase}
-    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;overflow:hidden;white-space:nowrap;font:11px var(--mono);letter-spacing:.12em;color:#77796f}
-    .ticker span{padding:0 26px}.ticker b{color:var(--ink);font-weight:500}
-    section{padding:105px 0;border-bottom:1px solid var(--line)}
-    .section-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:55px}
-    .section-no{font:11px var(--mono);color:var(--muted)}
-    h2{font-size:clamp(38px,6vw,76px);line-height:.98;letter-spacing:-.075em;margin:0;font-weight:700}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw;align-items:start}
-    .about-copy{font-size:clamp(19px,2.2vw,27px);line-height:1.55;letter-spacing:-.04em;max-width:610px}
-    .about-copy p{margin:0 0 24px}.about-side{padding-top:8px}
-    .about-side p{font-size:13px;line-height:1.8;color:var(--muted);max-width:360px;margin:0 0 25px}
-    .tags{display:flex;flex-wrap:wrap;gap:8px}.tag{border:1px solid var(--line);border-radius:40px;padding:9px 13px;font-size:10px;color:#55584f}
-    .work-intro{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}
-    .work-intro p{font-size:12px;color:var(--muted);max-width:250px;line-height:1.7;margin:0}
-    .projects{display:grid;grid-template-columns:1fr 1fr;gap:48px 22px}
-    .project{display:block}.project-visual{height:clamp(230px,34vw,430px);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;transition:transform .35s}
-    .project:hover .project-visual{transform:scale(.99)}
-    .visual-brand{background:#d8d8cd}.visual-brand:before{content:"LUMIO";font-size:clamp(48px,9vw,118px);font-weight:800;letter-spacing:-.1em;color:#20221e}
-    .visual-brand:after{content:"LEARNING, REIMAGINED";position:absolute;bottom:25px;left:27px;font:10px var(--mono);letter-spacing:.12em}
-    .visual-social{background:#d9dce0}.visual-social:before{content:"MAKE\\A IT\\A MATTER.";white-space:pre;font-size:clamp(40px,7vw,90px);font-weight:800;line-height:.83;letter-spacing:-.09em;text-align:center;color:#20232a}
-    .visual-social:after{content:"SOCIAL CAMPAIGN / 2026";position:absolute;bottom:25px;right:25px;font:10px var(--mono);color:#454a50}
-    .visual-thumb{background:#e5d9ce}.visual-thumb:before{content:"THE\\A BIG\\A IDEA";white-space:pre;font-size:clamp(45px,8vw,105px);line-height:.8;font-weight:800;letter-spacing:-.09em;text-align:center;color:#28211c}
-    .visual-thumb:after{content:"THUMBNAIL DESIGN";position:absolute;bottom:25px;left:25px;font:10px var(--mono)}
-    .visual-video{background:#cfd6cb}.visual-video:before{content:"FRAME\\A BY\\A FRAME";white-space:pre;font-size:clamp(44px,7.5vw,98px);line-height:.82;font-weight:800;letter-spacing:-.09em;text-align:center;color:#1e2a20}
-    .visual-video:after{content:"VIDEO EDITING / VISUAL STORYTELLING";position:absolute;bottom:25px;left:25px;font:10px var(--mono)}
-    .project-meta{display:flex;justify-content:space-between;align-items:start;padding-top:17px}
-    .project-title{font-size:19px;font-weight:700;letter-spacing:-.05em}.project-type{font:10px var(--mono);color:var(--muted);margin-top:6px}
-    .project-arrow{font-size:21px}
-    .more-work{margin-top:48px;display:flex;justify-content:center}
-    .services{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
-    .service{padding:24px 18px 20px 0;border-bottom:1px solid var(--line);min-height:170px}
-    .service+.service{padding-left:22px;border-left:1px solid var(--line)}
-    .service .num{font:10px var(--mono);color:var(--muted)}
-    .service h3{font-size:20px;letter-spacing:-.06em;margin:35px 0 8px}
-    .service p{font-size:11px;line-height:1.7;color:var(--muted);margin:0;max-width:210px}
-    .contact{background:var(--ink);color:var(--paper);padding:100px 0}
-    .contact .eyebrow{color:#a4a69b}.contact-grid{display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
-    .contact h2{font-size:clamp(54px,10vw,125px);max-width:800px;margin:30px 0 35px}
-    .contact .button{background:var(--accent);color:var(--ink)}
-    .contact-side{font-size:12px;line-height:2;color:#b8bab0;min-width:200px}
-    .contact-side a{border-bottom:1px solid #77796f}
-    footer{padding:25px 0;display:flex;justify-content:space-between;gap:20px;font:10px var(--mono);color:var(--muted)}
-    @media(max-width:700px){
-      .wrap{width:calc(100% - 36px)}header{height:68px}nav{gap:15px;font-size:10px}nav .nav-cta{display:none}
-      .hero{min-height:570px;padding:75px 0 45px}h1{margin:85px 0 45px;font-size:clamp(72px,17vw,120px)}
-      .hero-bottom{align-items:flex-start;flex-direction:column}.intro{font-size:15px}.scroll-note{display:none}
-      section{padding:75px 0}.section-head{margin-bottom:35px}.about-grid{grid-template-columns:1fr;gap:25px}
-      .projects{grid-template-columns:1fr;gap:34px}.project-visual{height:300px}
-      .work-intro{align-items:flex-start;gap:20px;flex-direction:column}
-      .services{grid-template-columns:1fr 1fr}.service{min-height:150px;padding:18px 10px 18px 0}.service+.service{padding-left:12px}
-      .service:nth-child(3){border-left:0;padding-left:0}.service h3{font-size:18px;margin-top:28px}
-      .contact{padding:75px 0}.contact-grid{align-items:flex-start;flex-direction:column}.contact-side{margin-top:20px}
-      footer{flex-direction:column}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111210">
+<meta name="description" content="Arun Thakur — Graphic Designer & Video Editor">
+<title>Arun Thakur® — Visual Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#111210;--panel:#1b1d19;--white:#f1f0e9;--muted:#999b91;--line:#34362f;--lime:#d5ff59;--font:'Space Grotesk',Arial,sans-serif;--mono:'DM Mono',monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:var(--font);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.wrap{width:min(1320px,calc(100% - 72px));margin:auto}
+header{height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.logo{font-size:22px;font-weight:700;letter-spacing:-1.8px}.logo span{color:var(--lime)}nav{display:flex;gap:34px;align-items:center;font:11px var(--mono);text-transform:uppercase;color:#c1c2b9}nav a:hover{color:var(--lime)}.nav-contact{border:1px solid #77796e;padding:11px 15px}
+.kicker{font:10px var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.hero{min-height:690px;padding:78px 0 55px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.hero-top{display:flex;justify-content:space-between;align-items:center}.status{display:flex;gap:9px;align-items:center;font:10px var(--mono);color:#c6c8bc;text-transform:uppercase}.status i{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 13px #d5ff5977}
+.hero-title{position:relative;z-index:1;margin:80px 0 55px}.hero h1{font-size:clamp(88px,15.5vw,205px);line-height:.76;letter-spacing:-.105em;margin:0;font-weight:700}.hero h1 span{display:block;color:var(--lime);padding-left:12vw}.hero-mark{position:absolute;right:5%;top:21%;width:clamp(110px,17vw,220px);aspect-ratio:1;border:1px solid #55584c;border-radius:50%;display:grid;place-items:center;transform:rotate(-17deg);font:10px var(--mono);color:var(--muted);text-align:center}.hero-mark:before{content:"";position:absolute;inset:12%;border:1px dashed #55584c;border-radius:50%}.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:30px}.hero-bottom p{font-size:17px;line-height:1.5;max-width:410px;color:#c3c4bb;margin:0}.hero-links{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:30px;padding:15px 18px;background:var(--lime);color:#111;font-size:11px;font-weight:700}.btn.outline{background:transparent;color:var(--white);border:1px solid #696b60}.btn:hover{transform:translateY(-3px)}
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;overflow:hidden;white-space:nowrap;font:11px var(--mono);letter-spacing:.12em;color:#b5b7ac}.marquee b{color:var(--lime);font-weight:400}.marquee span{margin-right:42px}
+section{padding:110px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:start;margin-bottom:52px}.index{font:10px var(--mono);color:var(--lime)}h2{font-size:clamp(46px,7vw,94px);line-height:.9;letter-spacing:-.085em;margin:0;font-weight:600}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:10vw}.about-copy{font-size:clamp(20px,2.5vw,31px);line-height:1.4;letter-spacing:-.045em;max-width:700px}.about-copy p{margin:0}.about-side{padding-top:5px}.about-side p{font-size:14px;line-height:1.8;color:var(--muted);max-width:440px;margin:0 0 30px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid var(--line);padding:9px 12px;border-radius:30px;font:10px var(--mono);color:#d2d3ca}
+.work-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:40px}.work-heading p{font-size:12px;line-height:1.7;color:var(--muted);max-width:260px;margin:0}.projects{display:grid;grid-template-columns:1.15fr .85fr;gap:62px 22px}.project:nth-child(2){margin-top:115px}.project:nth-child(3){margin-top:-85px}.project:nth-child(4){margin-top:35px}.project-art{position:relative;overflow:hidden;aspect-ratio:1.22;background:#262922;display:flex;align-items:center;justify-content:center;isolation:isolate}.project-art:after{content:"";position:absolute;inset:0;background:linear-gradient(130deg,transparent 30%,#0002);z-index:-1}
+.art-brand{background:#d6d4c7;color:#171914}.art-brand .big{font-size:clamp(60px,10vw,145px);font-weight:700;letter-spacing:-.11em}.art-brand .small{position:absolute;bottom:25px;left:27px;font:10px var(--mono);letter-spacing:.1em}
+.art-social{background:#d5ff59;color:#171914}.art-social .big{font-size:clamp(48px,8vw,112px);line-height:.78;letter-spacing:-.1em;font-weight:700;text-align:center;transform:rotate(-7deg)}.art-social .small{position:absolute;right:22px;bottom:22px;font:10px var(--mono)}
+.art-thumb{background:#c8b6a7;color:#171914}.art-thumb .big{font-size:clamp(55px,9vw,125px);line-height:.75;letter-spacing:-.1em;font-weight:700;text-align:center}.art-thumb .orb{position:absolute;width:34%;aspect-ratio:1;border-radius:50%;background:#e9e0d3;mix-blend-mode:screen;right:12%;top:12%;z-index:-1}
+.art-motion{background:#343d39;color:#f0eee6}.art-motion .big{font-size:clamp(54px,9vw,128px);line-height:.78;letter-spacing:-.1em;font-weight:700;text-align:center}.art-motion .shape{position:absolute;width:65%;height:65%;border:1px solid var(--lime);transform:rotate(35deg);z-index:-1}
+.project-info{display:flex;justify-content:space-between;padding-top:17px;align-items:start}.project-info h3{font-size:20px;letter-spacing:-.05em;margin:0 0 6px}.project-info p{font:10px var(--mono);color:var(--muted);margin:0}.arrow{font-size:22px;color:var(--lime)}
+.note{margin-top:55px;padding:18px 20px;border:1px solid var(--line);font:11px var(--mono);line-height:1.7;color:var(--muted)}.note strong{color:var(--lime);font-weight:400}
+.services{display:grid;grid-template-columns:repeat(4,1fr);margin-top:55px;border-top:1px solid var(--line)}.service{padding:22px 18px 20px 0;border-bottom:1px solid var(--line);min-height:190px}.service+.service{padding-left:20px;border-left:1px solid var(--line)}.service small{font:10px var(--mono);color:var(--lime)}.service h3{font-size:23px;letter-spacing:-.06em;margin:42px 0 8px}.service p{font-size:12px;line-height:1.6;color:var(--muted);max-width:220px;margin:0}
+.contact{background:var(--lime);color:#111;padding:105px 0}.contact .kicker{color:#414b27}.contact-grid{display:flex;justify-content:space-between;align-items:end;gap:35px}.contact h2{font-size:clamp(65px,12vw,155px);margin:32px 0;letter-spacing:-.1em}.contact .btn{background:#111;color:var(--white)}.contact-side{font:12px/2 var(--mono);min-width:230px}.contact-side a{text-decoration:underline;text-underline-offset:4px}
+footer{display:flex;justify-content:space-between;padding:25px 0;color:var(--muted);font:10px var(--mono)}
+@media(max-width:700px){.wrap{width:calc(100% - 36px)}header{height:68px}nav{gap:14px;font-size:9px}nav a:nth-child(3){display:none}.hero{min-height:600px;padding:60px 0 45px}.hero h1{font-size:clamp(76px,18vw,130px)}.hero-title{margin:110px 0 65px}.hero h1 span{padding-left:6vw}.hero-mark{right:2%;top:14%;width:105px;font-size:8px}.hero-bottom{align-items:flex-start;flex-direction:column}.hero-bottom p{font-size:15px}.hero-links{margin-top:5px}.section-head{margin-bottom:35px}section{padding:75px 0}.about-grid{grid-template-columns:1fr;gap:28px}.about-copy{font-size:22px}.work-heading{align-items:start;flex-direction:column;gap:22px}.projects{grid-template-columns:1fr;gap:35px}.project:nth-child(n){margin:0}.project:nth-child(even){width:90%;margin-left:auto}.project-art{aspect-ratio:1.12}.services{grid-template-columns:1fr 1fr}.service{min-height:165px;padding:18px 8px 18px 0}.service+.service{padding-left:12px}.service:nth-child(3){padding-left:0;border-left:0}.service h3{font-size:19px;margin-top:30px}.contact{padding:75px 0}.contact-grid{align-items:start;flex-direction:column}.contact h2{font-size:clamp(62px,15vw,100px)}.contact-side{margin-top:15px}footer{gap:12px;flex-direction:column}}
+</style>
 </head>
 <body>
-  <header class="wrap">
-    <a class="brand" href="#top">ARUN<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a><a href="#work">Work</a><a href="#services">Services</a><a class="nav-cta" href="#contact">Contact ↗</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <div class="wrap hero">
-      <div class="hero-top">
-        <div class="eyebrow">Independent creative portfolio / 2026</div>
-        <div class="availability"><i class="dot"></i> Graphic design & motion</div>
-      </div>
-      <h1>Arun<span class="second">Thakur.</span></h1>
-      <div class="hero-bottom">
-        <p class="intro">I create visual identities, digital designs and videos that communicate ideas with clarity and purpose.</p>
-        <a class="button" href="#work">Explore selected work <span>↗</span></a>
-        <div class="scroll-note">Scroll to explore ↓</div>
-      </div>
-    </div>
-
-    <div class="ticker"><span><b>BRANDING</b> ✳ SOCIAL DESIGN</span><span>✳ THUMBNAILS</span><span>✳ VIDEO EDITING</span><span>✳ VISUAL STORYTELLING</span><span>✳ <b>BRANDING</b></span></div>
-
-    <section id="about">
-      <div class="wrap">
-        <div class="section-head"><div class="section-no">01 / ABOUT</div><div class="eyebrow">A little context</div></div>
-        <div class="about-grid">
-          <div class="about-copy"><h2>A little about<br>what I do.</h2></div>
-          <div class="about-side">
-            <p>I'm Arun, a graphic designer and video editor based in Himachal Pradesh, India. I work across branding, social media design, thumbnails, photo manipulation and video editing. I like keeping my work clean, simple and visually strong.</p>
-            <div class="tags"><span class="tag">Photoshop</span><span class="tag">Illustrator</span><span class="tag">Premiere Pro</span><span class="tag">Canva</span><span class="tag">CorelDRAW</span><span class="tag">Branding</span><span class="tag">Video Editing</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="work">
-      <div class="wrap">
-        <div class="section-head"><div class="section-no">02 / SELECTED WORK</div><div class="eyebrow">A selection of creative work</div></div>
-        <div class="work-intro"><h2>Things I've<br>created.</h2><p>A selection across identity, digital design and moving image. More projects are available on Behance.</p></div>
-        <div class="projects">
-          <a class="project" href="https://www.behance.net/gallery/257617541/Graphic-Design-Video-Editing-Portfolio-Arun-Thakur" target="_blank" rel="noopener">
-            <div class="project-visual visual-brand" role="img" aria-label="Typographic brand identity project preview"></div>
-            <div class="project-meta"><div><div class="project-title">Brand Identity</div><div class="project-type">Branding & visual design</div></div><span class="project-arrow">↗</span></div>
-          </a>
-          <a class="project" href="https://www.behance.net/gallery/257617541/Graphic-Design-Video-Editing-Portfolio-Arun-Thakur" target="_blank" rel="noopener">
-            <div class="project-visual visual-social" role="img" aria-label="Social media design project preview"></div>
-            <div class="project-meta"><div><div class="project-title">Social Media</div><div class="project-type">Digital design & campaigns</div></div><span class="project-arrow">↗</span></div>
-          </a>
-          <a class="project" href="https://www.behance.net/gallery/257617541/Graphic-Design-Video-Editing-Portfolio-Arun-Thakur" target="_blank" rel="noopener">
-            <div class="project-visual visual-thumb" role="img" aria-label="YouTube thumbnail design project preview"></div>
-            <div class="project-meta"><div><div class="project-title">Thumbnails</div><div class="project-type">YouTube & creative design</div></div><span class="project-arrow">↗</span></div>
-          </a>
-          <a class="project" href="https://www.behance.net/gallery/257617541/Graphic-Design-Video-Editing-Portfolio-Arun-Thakur" target="_blank" rel="noopener">
-            <div class="project-visual visual-video" role="img" aria-label="Video editing project preview"></div>
-            <div class="project-meta"><div><div class="project-title">Video Editing</div><div class="project-type">Reels & visual storytelling</div></div><span class="project-arrow">↗</span></div>
-          </a>
-        </div>
-        <div class="more-work"><a class="button" href="https://www.behance.net/gallery/257617541/Graphic-Design-Video-Editing-Portfolio-Arun-Thakur" target="_blank" rel="noopener">View full Behance portfolio ↗</a></div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="wrap">
-        <div class="section-head"><div class="section-no">03 / WHAT I DO</div><div class="eyebrow">Creative capabilities</div></div>
-        <h2>Good ideas,<br>made visual.</h2>
-        <div class="services" style="margin-top:48px">
-          <div class="service"><div class="num">01</div><h3>Brand Identity</h3><p>Visual systems, logos and brand assets with a clear point of view.</p></div>
-          <div class="service"><div class="num">02</div><h3>Social Design</h3><p>Digital-first graphics and campaign content for social platforms.</p></div>
-          <div class="service"><div class="num">03</div><h3>Thumbnails</h3><p>Strong compositions and visual hooks for video content.</p></div>
-          <div class="service"><div class="num">04</div><h3>Video Editing</h3><p>Reels and edits shaped around pace, story and sound.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="wrap">
-        <div class="contact-grid">
-          <div><div class="eyebrow">04 / CONTACT</div><h2>Have something<br>in mind?</h2><a class="button" href="mailto:arunt1828@gmail.com">Let's work together <span>↗</span></a></div>
-          <div class="contact-side">For projects and collaborations<br><a href="mailto:arunt1828@gmail.com">arunt1828@gmail.com</a><br><br>Instagram<br><a href="https://instagram.com/arunxthakur" target="_blank" rel="noopener">@arunxthakur</a><br><br>Based in Himachal Pradesh, India</div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="wrap"><span>© 2026 Arun Thakur. All rights reserved.</span><span>Designed with purpose.</span></footer>
-</body>
-</html>
+<header class="wrap"><a class="logo" href="#top">ARUN<span>®</span></a><nav><a href="#about">About</a><a href="#work">Selected work</a><a href="#services">Services</a><a class="nav-contact" href="#contact">Let's talk ↗</a></nav></header>
+<main id="top">
+<div class="wrap hero">
+ <div class="hero-top"><span class="kicker">Independent designer / Himachal Pradesh, India</span><span class="status"><i></i> Available for select projects</span></div>
+ <div class="hero-title"><div class="hero-mark">DESIGN<br>✳<br>VIDEO<br>✳<br>IDEAS</div><h1>ARUN<span>THAKUR.</span></h1></div>
+ <div class="hero-bottom"><p>Graphic design and video editing with a focus on strong visuals, clear ideas and thoughtful details.</p><div class="hero-links"><a class="btn" href="#work">Explore selected work ↘</a><a class="btn outline" href="mailto:arunt1828@gmail.com">Get in touch ↗</a></div></div>
+</div>
+<div class="marquee"><span><b>✳</b> BRAND IDENTITY</span><span>✳ SOCIAL DESIGN</span><span>✳ THUMBNAILS</span><span>✳ VIDEO EDITING</span><span>✳ VISUAL STORYTELLING</span><span><b>✳</b> BRAND IDENTITY</span></div>
+<section id="about"><div class="wrap"><div class="section-head"><span class="index">01 / ABOUT</span><span class="kicker">The person behind the pixels</span></div><div class="about-grid"><div class="about-copy"><p>I’m Arun — a graphic designer and video editor shaping ideas into visual work that feels considered, useful and memorable.</p></div><div class="about-side"><p>Based in Himachal Pradesh, India. I work across branding, social media design, thumbnails, photo manipulation and video editing. My approach is simple: make every element earn its place.</p><div class="chips"><span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">Premiere Pro</span><span class="chip">Canva</span><span class="chip">CorelDRAW</span><span class="chip">Visual identity</span></div></div></div></div></section>
+<section id="work"><div class="wrap"><div class="section-head"><span class="index">02 / SELECTED WORK</span><span class="kicker">A few things from the desk</span></div><div class="work-heading"><h2>Selected<br>projects<span style="color:var(--lime)">.</span></h2><p>A mix of identity, digital design and moving image. Select a project to explore the full portfolio on Behance.</p></div>
+<div class="projects">
+<a class="project" href="https://www.behance.net/gallery/257617541/Graphic-Design-Video-Editing-Portfolio-Arun-Thakur" target="_blank" rel="noopener"><div class="project-art art-brand"><span class="big">LUMIO</span><span class="small">IDENTITY / BRAND SYSTEM</span></div><div class="project-info"><div><h3>Brand identity</h3><p>STRATEGY · LOGO · VISUAL SYSTEM</p></div><span class="arrow">↗</span></div></a>
+<a class="project" href="https://www.behance.net/gallery/257617541/Graphic-Design-Video-Editing-Portfolio-Arun-Thakur" target="_blank" rel="noopener"><div class="project-art art-social"><span class="big">MAKE<br>IT<br>MATTER.</span><span class="small">SOCIAL CAMPAIGN / 2026</span></div><div class="project-info"><div><h3>Social design</h3><p>DIGITAL CAMPAIGNS · CONTENT</p></div><span class="arrow">↗</span></div></a>
+<a class="project" href="https://www.behance.net/gallery/257617541/Graphic-Design-Video-Editing-Portfolio-Arun-Thakur" target="_blank" rel="noopener"><div class="project-art art-thumb"><span class="orb"></span><span class="big">THE<br>BIG<br>IDEA.</span></div><div class="project-info"><div><h3>Thumbnail design</h3><p>YOUTUBE · CREATOR VISUALS</p></div><span class="arrow">↗</span></div></a>
+<a class="project" href="https://www.behance.net/gallery/257617541/Graphic-Design-Video-Editing-Portfolio-Arun-Thakur" target="_blank" rel="noopener"><div class="project-art art-motion"><span class="shape"></span><span class="big">FRAME<br>BY<br>FRAME.</span></div><div class="project-info"><div><h3>Video editing</h3><p>REELS · EDITING · STORYTELLING</p></div><span class="arrow">↗</span></div></a>
+</div><div class="note"><strong>PROJECT IMAGE UPDATE:</strong> These are art-directed visual placeholders for now. Once you share your original project images, replace these panels with your actual work to complete the portfolio.</div></div></section>
+<section id="services"><div class="wrap"><div class="section-head"><span class="index">03 / CAPABILITIES</span><span class="kicker">What I can bring to a project</span></div><h2>From first idea<br>to final frame.</h2><div class="services"><div class="service"><small>01</small><h3>Brand identity</h3><p>Logos, visual systems and brand assets built to feel consistent.</p></div><div class="service"><small>02</small><h3>Social design</h3><p>Digital-first graphics and campaign content for social platforms.</p></div><div class="service"><small>03</small><h3>Thumbnails</h3><p>Clear visual hierarchy and strong compositions for video content.</p></div><div class="service"><small>04</small><h3>Video editing</h3><p>Reels and edits shaped around rhythm, story and sound.</p></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-grid"><div><span class="kicker">04 / HAVE A PROJECT?</span><h2>Let's make<br>it happen.</h2><a class="btn" href="mailto:arunt1828@gmail.com">Start a conversation ↗</a></div><div class="contact-side">EMAIL<br><a href="mailto:arunt1828@gmail.com">arunt1828@gmail.com</a><br><br>INSTAGRAM<br><a href="https://instagram.com/arunxthakur" target="_blank" rel="noopener">@arunxthakur</a><br><br>LOCATION<br>Himachal Pradesh, India</div></div></div></section>
+</main><footer class="wrap"><span>© 2026 ARUN THAKUR</span><span>DESIGN WITH INTENTION.</span></footer>
+</body></html>
