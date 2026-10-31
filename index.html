@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun Thakur | Graphic Designer & Video Editor</title>
+  <meta name="description" content="Arun Thakur is a graphic designer and video editor from Himachal Pradesh, India.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f4;
+      color: #171717;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 88%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      padding: 28px 0;
+      border-bottom: 1px solid #deded8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 120px 0 110px;
+    }
+
+    .tag {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #777;
+    }
+
+    h1 {
+      font-size: clamp(48px, 9vw, 94px);
+      line-height: 1.05;
+      letter-spacing: -5px;
+      margin: 25px 0;
+    }
+
+    h1 span {
+      color: #888;
+    }
+
+    .intro {
+      max-width: 560px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 13px 24px;
+      background: #171717;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 75px 0;
+      border-top: 1px solid #deded8;
+    }
+
+    .section-label {
+      color: #888;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 5vw, 48px);
+      letter-spacing: -2px;
+      margin-bottom: 25px;
+    }
+
+    .about-text {
+      max-width: 700px;
+      font-size: 18px;
+      color: #666;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .skills span {
+      border: 1px solid #ccc;
+      padding: 9px 16px;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .project {
+      background: #e9e9e4;
+      min-height: 230px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .project:nth-child(2) {
+      background: #e3e5e8;
+    }
+
+    .project:nth-child(3) {
+      background: #e9e2da;
+    }
+
+    .project:nth-child(4) {
+      background: #e4e5df;
+    }
+
+    .project h3 {
+      font-size: 23px;
+      margin-bottom: 5px;
+    }
+
+    .project p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .contact-text {
+      color: #666;
+      max-width: 500px;
+      font-size: 18px;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid #deded8;
+      color: #777;
+      font-size: 13px;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 85px 0;
+      }
+
+      h1 {
+        letter-spacing: -3px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 12px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">ARUN.</div>
+        <div>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="hero">
+        <p class="tag">Graphic Designer & Video Editor · India</p>
+        <h1>Arun<br><span>Thakur.</span></h1>
+        <p class="intro">
+          I create visual identities, digital designs and videos
+          that communicate ideas with clarity and purpose.
+        </p>
+        <a class="button" href="#work">Explore my work ↗</a>
+      </div>
+
+      <section id="about">
+        <p class="section-label">01 / About</p>
+        <h2>A little about me.</h2>
+        <p class="about-text">
+          I'm Arun, a graphic designer and video editor based in
+          Himachal Pradesh, India. I work across branding,
+          social media design, thumbnails, photo manipulation
+          and video editing. I like keeping my work clean,
+          simple and visually strong.
+        </p>
+
+        <div class="skills">
+          <span>Photoshop</span>
+          <span>Illustrator</span>
+          <span>Premiere Pro</span>
+          <span>Canva</span>
+          <span>CorelDRAW</span>
+          <span>Branding</span>
+          <span>Video Editing</span>
+        </div>
+      </section>
+
+      <section id="work">
+        <p class="section-label">02 / Selected Work</p>
+        <h2>Things I've created.</h2>
+
+        <div class="projects">
+          <div class="project">
+            <h3>Brand Identity</h3>
+            <p>Branding & Visual Design</p>
+          </div>
+
+          <div class="project">
+            <h3>Social Media</h3>
+            <p>Digital Design & Campaigns</p>
+          </div>
+
+          <div class="project">
+            <h3>Thumbnails</h3>
+            <p>YouTube & Creative Design</p>
+          </div>
+
+          <div class="project">
+            <h3>Video Editing</h3>
+            <p>Reels & Visual Storytelling</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section-label">03 / Contact</p>
+        <h2>Let's work together.</h2>
+        <p class="contact-text">
+          Have a project or an idea? Get in touch and let's
+          create something meaningful.
+        </p>
+        <a class="button"
+           href="mailto:arunt1828@gmail.com">
+          Get in touch ↗
+        </a>
+        <p style="margin-top:20px;">
+          Instagram:
+          <a href="https://instagram.com/arunxthakur"
+             style="color:#171717;">
+            @arunxthakur
+          </a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Arun Thakur. All rights reserved.</p>
+      <p>Designed with purpose.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
